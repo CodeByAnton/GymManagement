@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    expose:
+      - "8082"
+    environment:
+      - database_url=jdbc:postgresql://database:5432/fitness
+      - database_username=postgres
+      - database_password=THsF*3858
+      - DB_HOST=database
+      - DB_PORT=5432
+      - WAIT_DB_SEC=60
+    depends_on:
+      - database
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  database:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: THsF*3858
+      POSTGRES_DB: fitness
+    expose:
+      - "5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:

@@ -1,0 +1,36 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mail
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  datasource:
+    url: jdbc:tc:postgresql:16:///testDB?TC_DAEMON=true
+    username: testUser
+    password: testPassword
+  application:
+    name: is-lab1-backend
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:sql/schema.sql
+      data-locations: classpath:sql/test-data.sql
+JWTAuthService:
+  secret-key: 7dec524d50d2b1ec883f422e015659b1e57e42305e84c3cabb6d70911de2bc24
+server:
+  port: ${server_port:8082}

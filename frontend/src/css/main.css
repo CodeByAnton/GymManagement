@@ -1,0 +1,91 @@
+.form-control-lg {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: black !important;
+}
+
+.form-control-lg:focus {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: black !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.form-label {
+    color: black !important;
+}
+
+.btn-outline-dark {
+    border-color: black !important;
+    color: black !important;
+}
+
+.btn-outline-light {
+    border-color: white !important;
+    color: white !important;
+}
+.btn-outline-light:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.top-10{
+    top: 10%;
+}
+.left-2{
+    left: 2%;
+}
+
+.logo{
+    width: 140px;
+    height: auto;
+}
+
+.shadow-box-2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-link{
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+    text-align: center!important;
+}
+.nav-link.active {
+    background-color: #e8e7e7;
+}
+.orange-primary{
+    background-color: #D9991AFF !important;
+    border-color: #D9991AFF !important;
+    color: white !important;
+}
+.success-primary{
+    background-color: #14A44DFF !important;
+    border-color: #14A44DFF !important;
+    color: white !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body{
+    background: linear-gradient(to right, rgb(222, 221, 221), rgba(255, 255, 255, 0.9));
+}

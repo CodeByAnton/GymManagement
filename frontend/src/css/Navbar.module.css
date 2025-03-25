@@ -1,0 +1,22 @@
+
+
+.active{
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    color: black!important;
+}
+.logo {
+    max-width: 150px;
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .element {
+        font-size: 12px;
+    }
+
+}
