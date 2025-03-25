@@ -9,7 +9,7 @@ git clone https://github.com/CodeByAnton/GymManagement
 ### Go to root directory
 
 ```bash
-cd itmo-is-cw
+cd GymManagement
 ```
 
 ### Start docker network
