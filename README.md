@@ -3,7 +3,7 @@
 ### Clone repository
 
 ```bash
-git clone 
+git clone https://github.com/CodeByAnton/GymManagement
 ```
 
 ### Go to root directory
